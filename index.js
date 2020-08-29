@@ -45,7 +45,7 @@ app.delete("/api/genres/:name", (request, response) => {
 
 const port = process.env.PORT || 8080;
 app.listen(port, () => {
-	console.log(`Listening to port ${port}`);
+	console.log(`Listening to port ${port}...`);
 });
 
 function validateGenre(genre) {
