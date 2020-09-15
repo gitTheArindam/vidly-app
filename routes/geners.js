@@ -13,7 +13,7 @@ const genreSchema = new mongoose.Schema({
 	},
 });
 
-const Genre = new mongoose.model("Genre", genreSchema);
+const Genre = mongoose.model("Genre", genreSchema);
 
 // GET method
 router.get("/", async (request, response) => {
