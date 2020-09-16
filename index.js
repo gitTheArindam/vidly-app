@@ -1,5 +1,6 @@
 const mongoose = require("mongoose");
 const genres = require("./routes/geners");
+const customers = require("./routes/customers");
 const express = require("express");
 const app = express();
 
@@ -19,6 +20,7 @@ mongoose
 
 app.use(express.json()); // Middleware
 app.use("/api/genres", genres);
+app.use("/api/customers", customers);
 
 const port = process.env.PORT || 8080;
 app.listen(port, () => {
